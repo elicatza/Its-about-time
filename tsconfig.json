@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "preserveConstEnums": true,
+        "watch": true,
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "outFile": "./static/main.js",
+        "sourceMap": true
+    },
+    "include": ["src/*"]
+}
