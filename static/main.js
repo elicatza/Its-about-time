@@ -48,7 +48,7 @@ function isValidTime(time) {
         return false;
     }
     var i;
-    var regex = /[0-9,.:]/;
+    var regex = /[0-9,.:-]/;
     for (i = 0; i < time.length; ++i) {
         if (time[i].match(regex) === null) {
             return false;
@@ -89,17 +89,35 @@ function returnSecondsInTime(time) {
     return result;
 }
 function formatTime(time) {
-    while (time.seconds > 60 * 60 * 24) {
-        time.seconds -= 60 * 60 * 24;
-        ++time.days;
+    while (Math.abs(time.seconds) > 60 * 60 * 24) {
+        if (time.seconds > 0) {
+            time.seconds -= 60 * 60 * 24;
+            ++time.days;
+        }
+        else {
+            time.seconds += 60 * 60 * 24;
+            --time.days;
+        }
     }
-    while (time.seconds > 60 * 60) {
-        time.seconds -= 60 * 60;
-        ++time.hours;
+    while (Math.abs(time.seconds) > 60 * 60) {
+        if (time.seconds > 0) {
+            time.seconds -= 60 * 60;
+            ++time.hours;
+        }
+        else {
+            time.seconds += 60 * 60;
+            --time.hours;
+        }
     }
-    while (time.seconds > 60) {
-        time.seconds -= 60;
-        ++time.minutes;
+    while (Math.abs(time.seconds) > 60) {
+        if (time.seconds > 0) {
+            time.seconds -= 60;
+            ++time.minutes;
+        }
+        else {
+            time.seconds += 60;
+            --time.minutes;
+        }
     }
 }
 function addTime(time1, time2) {
@@ -148,6 +166,10 @@ function displayTime(time, paragraph) {
     }
     else if (time.seconds !== 0) {
         displayString += String(parseFloat(time.seconds.toFixed(3)));
+    }
+    if (displayString.match(/-/) !== null) {
+        displayString = displayString.replace(/-/g, "");
+        displayString = "-" + displayString;
     }
     paragraph.innerHTML = displayString;
 }
