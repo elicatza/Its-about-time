@@ -130,16 +130,16 @@ function displayTime(time: Time, paragraph: HTMLParagraphElement): void {
         displayString += String(time.days) + ":";
         displayString += String(time.hours) + ":";
         displayString += String(time.minutes) + ":";
-        displayString += String(time.seconds);
+        displayString += String(parseFloat(time.seconds.toFixed(3)));
     } else if (time.hours !== 0) {
         displayString += String(time.hours) + ":";
         displayString += String(time.minutes) + ":";
-        displayString += String(time.seconds);
+        displayString += String(parseFloat(time.seconds.toFixed(3)));
     } else if (time.minutes !== 0) {
         displayString += String(time.minutes) + ":";
-        displayString += String(time.seconds);
+        displayString += String(parseFloat(time.seconds.toFixed(3)));
     } else if (time.seconds !== 0) {
-        displayString += String(time.seconds);
+        displayString += String(parseFloat(time.seconds.toFixed(3)));
     }
 
     paragraph.innerHTML = displayString;
