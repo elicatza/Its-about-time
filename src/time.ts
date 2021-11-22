@@ -14,7 +14,7 @@ function isValidTime(time: string): boolean {
     }
 
     let i: number;
-    const regex: RegExp = /[0-9.:]/
+    const regex: RegExp = /[0-9,.:]/
     for (i = 0; i < time.length; ++i) {
         if (time[i].match(regex) === null) {
             return false;
@@ -30,6 +30,10 @@ function isValidTime(time: string): boolean {
 
 
 function stringToTime(string: string): Time {
+    if (string.match(",") !== null) {
+        string = string.replace(",", ".");
+    }
+
     let time: Time = {
         seconds: 0,
         minutes: 0,

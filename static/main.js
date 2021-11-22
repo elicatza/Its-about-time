@@ -48,7 +48,7 @@ function isValidTime(time) {
         return false;
     }
     var i;
-    var regex = /[0-9.:]/;
+    var regex = /[0-9,.:]/;
     for (i = 0; i < time.length; ++i) {
         if (time[i].match(regex) === null) {
             return false;
@@ -60,6 +60,9 @@ function isValidTime(time) {
     return true;
 }
 function stringToTime(string) {
+    if (string.match(",") !== null) {
+        string = string.replace(",", ".");
+    }
     var time = {
         seconds: 0,
         minutes: 0,
