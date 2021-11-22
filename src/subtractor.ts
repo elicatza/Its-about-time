@@ -11,6 +11,19 @@ subClearEl.addEventListener("click", clearInputFields, false);
 subCopyEl.addEventListener("click", copyResult, false);
 
 
+subOperand1El.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        subSubmitEl.click();
+    }
+});
+
+subOperand2El.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        subSubmitEl.click();
+    }
+});
+
+
 function clearInputFields(): void {
     subOperand1El.value = "";
     subOperand2El.value = "";
