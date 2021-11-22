@@ -54,6 +54,9 @@ function isValidTime(time) {
             return false;
         }
     }
+    if ((time.split(/\./).length + time.split(/,/).length) >= 4) {
+        return false;
+    }
     if (time.split(":").length >= 5) {
         return false;
     }
