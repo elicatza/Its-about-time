@@ -3,6 +3,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     color: #282828;
+    font-family: sans-serif;
 
     /* Dark mode
     background-color: #282828;
@@ -37,11 +38,13 @@ h3 {
 
 input.time-subtractor {
     margin-left: 24px;
+    font-size: 13pt;
 }
 
 p.time-subtractor {
     font-weight: bold;
     text-align: center;
+    font-size: 15pt;
 }
 
 button.time-subtractor {
