@@ -1,6 +1,7 @@
 var subResultEl = document.getElementById("subtractor-result");
 var subOperand1El = document.getElementById("subtractor-operand-1");
 var subOperand2El = document.getElementById("subtractor-operand-2");
+var subOperatorEl = document.getElementById("subtractor-operator");
 var subSubmitEl = document.getElementById("subtractor-submit-btn");
 var subClearEl = document.getElementById("subtractor-clear-btn");
 var subCopyEl = document.getElementById("subtractor-copy-btn");
@@ -17,9 +18,15 @@ subOperand2El.addEventListener("keyup", function (event) {
         subSubmitEl.click();
     }
 });
+subOperatorEl.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+        subSubmitEl.click();
+    }
+});
 function clearInputFields() {
     subOperand1El.value = "";
     subOperand2El.value = "";
+    subOperatorEl.value = "";
 }
 function copyResult() {
     var result = subResultEl.innerHTML;
@@ -28,8 +35,7 @@ function copyResult() {
 function main() {
     var operand1 = subOperand1El.value;
     var operand2 = subOperand2El.value;
-    console.log("Field1: " + operand1);
-    console.log("Field2: " + operand2);
+    var operator = subOperatorEl.value;
     if (isValidTime(operand1) && isValidTime(operand2)) {
         subResultEl.innerHTML = "";
     }
@@ -39,8 +45,30 @@ function main() {
     }
     var time1 = stringToTime(operand1);
     var time2 = stringToTime(operand2);
-    console.log(subtractTime(time1, time2));
-    displayTime(subtractTime(time1, time2), subResultEl);
+    switch (operator) {
+        case "+": {
+            displayTime(addTime(time1, time2), subResultEl);
+            break;
+        }
+        case "-": {
+            displayTime(subtractTime(time1, time2), subResultEl);
+            break;
+        }
+        case "*": {
+            displayTime(addTime(time1, time2), subResultEl);
+            displayTime(multiplyTime(time1, time2), subResultEl);
+            break;
+        }
+        case "/": {
+            displayTime(dividingTime(time1, time2), subResultEl);
+            break;
+        }
+        default: {
+            console.log("This is invalid");
+            subResultEl.innerHTML = "Invalid operator!";
+            break;
+        }
+    }
     return 0;
 }
 function isValidTime(time) {

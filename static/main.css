@@ -14,7 +14,7 @@ body {
 input {
     margin-top: 5px;
     margin-bottom: 5px;
-    width: 100px;
+    width: 77px; /* 100px */
     height: 25px;
 }
 
@@ -41,6 +41,10 @@ input.time-subtractor {
     font-size: 13pt;
 }
 
+input.time-subtractor.operator {
+    width: 10px;
+}
+
 p.time-subtractor {
     font-weight: bold;
     text-align: center;
@@ -52,5 +56,4 @@ button.time-subtractor {
     margin-left: 22px;
 }
 
-.time-subtractor {
-}
+

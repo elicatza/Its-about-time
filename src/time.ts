@@ -73,7 +73,7 @@ function returnSecondsInTime(time: Time): number {
 }
 
 
-function formatTime(time: Time): void { // TODO Work with negative numbers. Absolute value
+function formatTime(time: Time): void {
     while (Math.abs(time.seconds) > 60 * 60 * 24) {
         if (time.seconds > 0) {
             time.seconds -= 60 * 60 * 24;
