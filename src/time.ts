@@ -52,7 +52,6 @@ function stringToTime(string: string): Time {
     time.hours = (Number(time_arr[time_arr.length - 3])) ? Number(time_arr[time_arr.length - 3]) : 0;
     time.days = (Number(time_arr[time_arr.length - 4])) ? Number(time_arr[time_arr.length - 4]) : 0;
 
-    console.log(time);
 
     return time;
 }

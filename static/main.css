@@ -36,22 +36,27 @@ h3 {
 }
 
 
-input.time-subtractor {
-    margin-left: 24px;
+input.time-calculator {
+    margin-left: 16px;
     font-size: 13pt;
 }
 
-input.time-subtractor.operator {
+input.time-calculator.operator {
     width: 10px;
 }
 
-p.time-subtractor {
+select.time-calculator.operator {
+    width: 50px;
+    margin-left: 16px;
+}
+
+p.time-calculator {
     font-weight: bold;
     text-align: center;
     font-size: 15pt;
 }
 
-button.time-subtractor {
+button.time-calculator {
     margin-top: 30px;
     margin-left: 22px;
 }

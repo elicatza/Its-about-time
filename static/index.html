@@ -9,15 +9,20 @@
 
   <body>
 
-      <div class="box time-subtractor">
+      <div class="box time-calculator">
         <h3>Time calculator</h3>
-        <p class="time-subtractor" id="subtractor-result">Result</p>
-        <input class="time-subtractor" id="subtractor-operand-1" size="10" maxlength="12">
-        <input class="time-subtractor operator" id="subtractor-operator" size="addTime" maxlength="1">
-        <input class="time-subtractor" id="subtractor-operand-2" size="10" maxlength="12">
-        <button class="time-subtractor" id="subtractor-submit-btn">Submit</button>
-        <button class="time-subtractor" id="subtractor-clear-btn">Clear</button>
-        <button class="time-subtractor" id="subtractor-copy-btn">Copy</button>
+        <p class="time-calculator" id="calculator-result">Result</p>
+        <input class="time-calculator" id="calculator-operand-1" size="10" maxlength="12">
+        <select class="time-calculator operator" id="calculator-operator">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
+        </select>
+        <input class="time-calculator" id="calculator-operand-2" size="10" maxlength="12">
+        <button class="time-calculator" id="calculator-submit-btn">Submit</button>
+        <button class="time-calculator" id="calculator-clear-btn">Clear</button>
+        <button class="time-calculator" id="calculator-copy-btn">Copy</button>
       </div>
 
 

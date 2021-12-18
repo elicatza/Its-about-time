@@ -1,10 +1,10 @@
-var subResultEl = document.getElementById("subtractor-result");
-var subOperand1El = document.getElementById("subtractor-operand-1");
-var subOperand2El = document.getElementById("subtractor-operand-2");
-var subOperatorEl = document.getElementById("subtractor-operator");
-var subSubmitEl = document.getElementById("subtractor-submit-btn");
-var subClearEl = document.getElementById("subtractor-clear-btn");
-var subCopyEl = document.getElementById("subtractor-copy-btn");
+var subResultEl = document.getElementById("calculator-result");
+var subOperand1El = document.getElementById("calculator-operand-1");
+var subOperand2El = document.getElementById("calculator-operand-2");
+var subOperatorEl = document.getElementById("calculator-operator");
+var subSubmitEl = document.getElementById("calculator-submit-btn");
+var subClearEl = document.getElementById("calculator-clear-btn");
+var subCopyEl = document.getElementById("calculator-copy-btn");
 subSubmitEl.addEventListener("click", main, false);
 subClearEl.addEventListener("click", clearInputFields, false);
 subCopyEl.addEventListener("click", copyResult, false);
@@ -55,7 +55,6 @@ function main() {
             break;
         }
         case "*": {
-            displayTime(addTime(time1, time2), subResultEl);
             displayTime(multiplyTime(time1, time2), subResultEl);
             break;
         }
@@ -64,7 +63,6 @@ function main() {
             break;
         }
         default: {
-            console.log("This is invalid");
             subResultEl.innerHTML = "Invalid operator!";
             break;
         }
@@ -105,7 +103,6 @@ function stringToTime(string) {
     time.minutes = (Number(time_arr[time_arr.length - 2])) ? Number(time_arr[time_arr.length - 2]) : 0;
     time.hours = (Number(time_arr[time_arr.length - 3])) ? Number(time_arr[time_arr.length - 3]) : 0;
     time.days = (Number(time_arr[time_arr.length - 4])) ? Number(time_arr[time_arr.length - 4]) : 0;
-    console.log(time);
     return time;
 }
 function returnSecondsInTime(time) {

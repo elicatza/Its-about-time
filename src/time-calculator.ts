@@ -1,11 +1,11 @@
-let subResultEl = <HTMLParagraphElement>document.getElementById("subtractor-result");
-let subOperand1El = <HTMLInputElement>document.getElementById("subtractor-operand-1");
-let subOperand2El = <HTMLInputElement>document.getElementById("subtractor-operand-2");
-let subOperatorEl = <HTMLInputElement>document.getElementById("subtractor-operator");
+let subResultEl = <HTMLParagraphElement>document.getElementById("calculator-result");
+let subOperand1El = <HTMLInputElement>document.getElementById("calculator-operand-1");
+let subOperand2El = <HTMLInputElement>document.getElementById("calculator-operand-2");
+let subOperatorEl = <HTMLInputElement>document.getElementById("calculator-operator");
 
-let subSubmitEl = <HTMLButtonElement>document.getElementById("subtractor-submit-btn");
-let subClearEl = <HTMLButtonElement>document.getElementById("subtractor-clear-btn");
-let subCopyEl = <HTMLButtonElement>document.getElementById("subtractor-copy-btn");
+let subSubmitEl = <HTMLButtonElement>document.getElementById("calculator-submit-btn");
+let subClearEl = <HTMLButtonElement>document.getElementById("calculator-clear-btn");
+let subCopyEl = <HTMLButtonElement>document.getElementById("calculator-copy-btn");
 
 subSubmitEl.addEventListener("click", main, false);
 subClearEl.addEventListener("click", clearInputFields, false);
@@ -68,14 +68,12 @@ function main(): number {
             displayTime(subtractTime(time1, time2), subResultEl);
             break;
         } case "*": {
-            displayTime(addTime(time1, time2), subResultEl);
             displayTime(multiplyTime(time1, time2), subResultEl);
             break;
         } case "/": {
             displayTime(dividingTime(time1, time2), subResultEl);
             break;
         } default: {
-            console.log("This is invalid");
             subResultEl.innerHTML = "Invalid operator!";
             break;
         }
