@@ -1,3 +1,4 @@
+"use strict";
 var subResultEl = document.getElementById("calculator-result");
 var subOperand1El = document.getElementById("calculator-operand-1");
 var subOperand2El = document.getElementById("calculator-operand-2");
