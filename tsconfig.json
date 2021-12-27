@@ -1,13 +1,17 @@
 {
     "compilerOptions": {
+        "target":"ES6",
         "strict": true,
         "watch": true,
+        "module": "ES6",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
         "removeComments": true,
         "preserveConstEnums": true,
         "noImplicitAny": true,
         "preserveConstEnums": true,
-        "outFile": "./static/main.js",
         "sourceMap": true
     },
-    "include": ["src/*"]
+    "include": ["static/src/**/*"]
 }

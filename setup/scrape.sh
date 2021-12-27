@@ -22,5 +22,6 @@ pup --color -f $dl_location 'table.wikitable td:nth-child(2) text{}' |
 pup --color -f $dl_location 'table.wikitable td:nth-child(3) text{}' | 
     sed '/\/\|–/,+2d' | # Remove time offsets with multiple values
     sed 's/[UTC±]//g' | # Remove text
+    sed 's/−/-/g' |     # Replaces − with -
     sed '/^[ [[:space:]]*$/d' > dest/timezone_offs.txt # Remove empty lines
 

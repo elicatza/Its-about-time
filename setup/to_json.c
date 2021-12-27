@@ -20,9 +20,9 @@ int main() {
         const char* mode;
         const char* key;
     } files[] = {
-        { NULL, "dest/timezone_abbr.txt", "r", "name" },
-        { NULL, "dest/timezone_name.txt", "r", "abbreviation" },
-        { NULL, "dest/timezone_offs.txt", "r", "offset" },
+        { NULL, "dest/timezone_name.txt", "r", "name" },
+        { NULL, "dest/timezone_abbr.txt", "r", "abbr" },
+        { NULL, "dest/timezone_offs.txt", "r", "offs" },
         { NULL, NULL, NULL, NULL }
     };
 
@@ -67,7 +67,7 @@ int main() {
         fprintf(stderr, "ERROR: Unable to open file");
         return 1;
     }
-    fprintf(dest_fp, "%s", json_object_to_json_string_ext(root, JSON_C_TO_STRING_PRETTY | JSON_C_TO_STRING_SPACED));
+    fprintf(dest_fp, "%s", json_object_to_json_string_ext(root, JSON_C_TO_STRING_PLAIN));
 
     /* Exit program */
 

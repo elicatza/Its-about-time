@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>It's about time</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
@@ -11,21 +11,50 @@
 
       <div class="box time-calculator">
         <h3>Time calculator</h3>
-        <p class="time-calculator" id="calculator-result">Result</p>
-        <input class="time-calculator" id="calculator-operand-1" size="10" maxlength="12">
-        <select class="time-calculator operator" id="calculator-operator">
-          <option value="+">+</option>
-          <option value="-">-</option>
-          <option value="*">*</option>
-          <option value="/">/</option>
-        </select>
-        <input class="time-calculator" id="calculator-operand-2" size="10" maxlength="12">
-        <button class="time-calculator" id="calculator-submit-btn">Submit</button>
-        <button class="time-calculator" id="calculator-clear-btn">Clear</button>
-        <button class="time-calculator" id="calculator-copy-btn">Copy</button>
+        <p class="time-calculator result" id="calculator-result">Result</p>
+        <div class="row id1">
+          <input class="time-calculator" id="calculator-operand-1" size="10" maxlength="12">
+          <select class="time-calculator operator" id="calculator-operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+          </select>
+          <input class="time-calculator" id="calculator-operand-2" size="10" maxlength="12">
+        </div>
+        <div class="row id2">
+        </div> 
+        <div class="row id3">
+          <button class="time-calculator" id="calculator-submit-btn">Submit</button>
+          <button class="time-calculator" id="calculator-clear-btn">Clear</button>
+          <button class="time-calculator" id="calculator-copy-btn">Copy</button>
+        </div>
       </div>
 
+      <div class="box timezone">
+        <h3>Timezones</h3>
+        <p class="timezone result" id="timezone-result">Result</p>
 
-    <script type="text/javascript" src="main.js"></script>
+        <div class="row id1">
+          <input class="timezone" id="timezone-input-tz-1" size="10" maxlength="12" list="timezone-list">
+          <p id="timezone-offset-1">UTC+2</p>
+        </div> 
+
+        <div class="row id2">
+          <input class="timezone" id="timezone-input-date" size="10" maxlength="16">
+          <button class="timezone" id="timezone-current-btn">Current</button>
+        </div> 
+
+        <div class="row id3">
+          <input class="timezone" id="timezone-input-tz-2" size="10" maxlength="12" list="timezone-list">
+          <p id="timezone-offset-2">UTC-3</p>
+        </div> 
+
+      </div>
+
+          <datalist id="timezone-list">
+          </datalist>
+
+    <script type="module" src="src/main.js"></script>
   </body>
 </html>
