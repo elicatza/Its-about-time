@@ -2,7 +2,7 @@
 
 PROJECTNAME="to_json"
 OUTDIR="bin/"
-SRCDIR="setup/"
+SRCDIR="setup.d/"
 CFLAGS="-std=c99 -Wall -I/usr/include/json-c/ -ljson-c"
 
 OUTPUT="${OUTDIR}${PROJECTNAME}"
@@ -13,7 +13,7 @@ gcc $CFLAGS -o $OUTPUT $FILES
 
 
 echo "Downloading webpage and formating output"
-./setup/scrape.sh
+./setup.d/scrape.sh
 echo "Converting output to json"
 ./bin/to_json
 

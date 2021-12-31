@@ -37,17 +37,13 @@ export function returnOffsMatchIndex(tzOffs: string, tzObj: any): number {
     return -1;
 }
 
-export function stringToDate(date: string): Date {
-    return new Date();
-}
 
-
-// YYYY:MM:DD hh:mm
+// hh:mm YYYY:MM:DD 
 export function formatDate(date: Date): string {
     return date.getHours() + ":" +
         date.getMinutes() + "&nbsp;&nbsp;&nbsp;" +
         date.getDate() + "." +
-        date.getMonth() + "." +
+        (date.getMonth() + 1 ) + "." +
         date.getFullYear();
 }
 
@@ -59,11 +55,12 @@ export function parseDate(input: string): Date {
     const date: string = input.split(" ")[1];
     const day: number = parseFloat(date.split(".")[0]);
     const month: number = parseFloat(date.split(".")[1]);
+    console.log(month);
 
     const newDate: Date = new Date();
     newDate.setMinutes(minutes);
     newDate.setHours(hours);
     newDate.setDate(day);
-    newDate.setMonth(month);
+    newDate.setMonth(month - 1);
     return newDate;
 }

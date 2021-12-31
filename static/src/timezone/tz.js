@@ -28,14 +28,11 @@ export function returnOffsMatchIndex(tzOffs, tzObj) {
     }
     return -1;
 }
-export function stringToDate(date) {
-    return new Date();
-}
 export function formatDate(date) {
     return date.getHours() + ":" +
         date.getMinutes() + "&nbsp;&nbsp;&nbsp;" +
         date.getDate() + "." +
-        date.getMonth() + "." +
+        (date.getMonth() + 1) + "." +
         date.getFullYear();
 }
 export function parseDate(input) {
@@ -45,11 +42,12 @@ export function parseDate(input) {
     const date = input.split(" ")[1];
     const day = parseFloat(date.split(".")[0]);
     const month = parseFloat(date.split(".")[1]);
+    console.log(month);
     const newDate = new Date();
     newDate.setMinutes(minutes);
     newDate.setHours(hours);
     newDate.setDate(day);
-    newDate.setMonth(month);
+    newDate.setMonth(month - 1);
     return newDate;
 }
 //# sourceMappingURL=tz.js.map

@@ -63,22 +63,29 @@ function addAbbrToDatalist() {
     return;
 }
 function calculate() {
-    const tzAbbrInput = [
+    const tzNameInput = [
         tzOperandEl[0].value,
         tzOperandEl[1].value
     ];
     let tzOffs = [0, 0];
-    console.log(tzAbbrInput[0]);
-    console.log(tzAbbrInput[1]);
     let index = [-1, -1];
     let i;
     let timezoneDifference;
     {
         let exit = false;
-        for (i = 0; i < tzAbbrInput.length; ++i) {
-            if ((index[i] = tz.returnNameMatchIndex(tzAbbrInput[i], tzObj.timezones)) != -1) {
+        for (i = 0; i < tzNameInput.length; ++i) {
+            if ((index[i] = tz.returnNameMatchIndex(tzNameInput[i], tzObj.timezones)) != -1) {
                 tzOffsetEl[i].textContent = "UTC" + tzObj.timezones[index[i]].offs;
-                tzOffs[i] = tzObj.timezones[index[i]].offs;
+                if (tzObj.timezones[index[i]].offs.match(":") != null) {
+                    const tmp_split = tzObj.timezones[index[i]].offs.split(":");
+                    console.log("Left hand: " + tmp_split[0]);
+                    console.log("Right hand: " + tmp_split[1]);
+                    console.log(parseFloat(tmp_split[0]) + (parseFloat(tmp_split[1]) / 60));
+                    tzOffs[i] = parseFloat(tmp_split[0]) + (parseFloat(tmp_split[1]) / 60);
+                }
+                else {
+                    tzOffs[i] = tzObj.timezones[index[i]].offs;
+                }
             }
             else {
                 tzOffsetEl[i].textContent = "Invalid";
@@ -90,8 +97,9 @@ function calculate() {
         }
         ;
     }
+    console.log(tzOffs[0]);
+    console.log(tzOffs[1]);
     timezoneDifference = (tzOffs[0] > tzOffs[1]) ? tzOffs[1] - tzOffs[0] : tzOffs[0] - tzOffs[1];
-    console.log(timezoneDifference);
     const userDate = tz.parseDate(tzDateEl.value);
     userDate.setHours(userDate.getHours() + timezoneDifference);
     tzResultEl.innerHTML = tz.formatDate(userDate);

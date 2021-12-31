@@ -1,0 +1,208 @@
+Australian Central Daylight Saving Time
+Australian Central Standard Time
+Acre Time
+ASEAN Common Time
+Australian Central Western Standard Time
+Atlantic Daylight Time
+Australian Eastern Daylight Saving Time
+Australian Eastern Standard Time
+Australian Eastern Time
+Afghanistan Time
+Alaska Daylight Time
+Alaska Standard Time
+Alma-Ata Time
+Amazon Summer Time
+Amazon Time
+Armenia Time
+Anadyr Time
+Aqtobe Time
+Argentina Time
+Arabia Standard Time
+Atlantic Standard Time
+Australian Western Standard Time
+Azores Summer Time
+Azores Standard Time
+Azerbaijan Time
+Brunei Time
+British Indian Ocean Time
+Baker Island Time
+Bolivia Time
+Brasília Summer Time
+Brasília Time
+Bangladesh Standard Time
+Bougainville Standard Time
+British Summer Time (British Standard Time from Feb 1968 to Oct 1971)
+Bhutan Time
+Central Africa Time
+Cocos Islands Time
+Central Daylight Time
+Cuba Daylight Time
+Central European Summer Time
+Central European Time
+Chatham Daylight Time
+Chatham Standard Time
+Choibalsan Standard Time
+Choibalsan Summer Time
+Chamorro Standard Time
+Chuuk Time
+Clipperton Island Standard Time
+Cook Island Time
+Chile Summer Time
+Chile Standard Time
+Colombia Summer Time
+Colombia Time
+Central Standard Time
+China Standard Time
+Cuba Standard Time
+Central Time
+Cape Verde Time
+Central Western Standard Time
+Christmas Island Time
+Davis Time
+Dumont d&#39;Urville Time
+AIX-specific equivalent of Central European Time
+Easter Island Summer Time
+Easter Island Standard Time
+East Africa Time
+Eastern Caribbean Time
+Ecuador Time
+Eastern Daylight Time
+Eastern European Summer Time
+Eastern European Time
+Eastern Greenland Summer Time
+Eastern Greenland Time
+Eastern Standard Time
+Eastern Time
+Further-eastern European Time
+Fiji Time
+Falkland Islands Summer Time
+Falkland Islands Time
+Fernando de Noronha Time
+Galápagos Time
+Gambier Islands Time
+Georgia Standard Time
+French Guiana Time
+Gilbert Island Time
+Gambier Island Time
+Greenwich Mean Time
+South Georgia and the South Sandwich Islands Time
+Gulf Standard Time
+Guyana Time
+Hawaii–Aleutian Daylight Time
+Heure Avancée d&#39;Europe Centrale French-language name for CEST
+Hawaii–Aleutian Standard Time
+Hong Kong Time
+Heard and McDonald Islands Time
+Hovd Summer Time
+Hovd Time
+Indochina Time
+International Day Line West time zone
+Israel Daylight Time
+Indian Ocean Time
+Iran Daylight Time
+Irkutsk Time
+Iran Standard Time
+Indian Standard Time
+Irish Standard Time
+Israel Standard Time
+Japan Standard Time
+Kaliningrad Time
+Kyrgyzstan Time
+Kosrae Time
+Krasnoyarsk Time
+Korea Standard Time
+Lord Howe Standard Time
+Lord Howe Summer Time
+Line Islands Time
+Magadan Time
+Marquesas Islands Time
+Mawson Station Time
+Mountain Daylight Time
+Middle European Time
+Middle European Summer Time
+Marshall Islands Time
+Macquarie Island Station Time
+Marquesas Islands Time
+Myanmar Standard Time
+Moscow Time
+Malaysia Standard Time
+Mountain Standard Time
+Mauritius Time
+Maldives Time
+Malaysia Time
+New Caledonia Time
+Newfoundland Daylight Time
+Norfolk Island Time
+Novosibirsk Time
+Nepal Time
+Newfoundland Standard Time
+Newfoundland Time
+Niue Time
+New Zealand Daylight Time
+New Zealand Standard Time
+Omsk Time
+Oral Time
+Pacific Daylight Time
+Peru Time
+Kamchatka Time
+Papua New Guinea Time
+Phoenix Island Time
+Philippine Time
+Philippine Standard Time
+Pakistan Standard Time
+Saint Pierre and Miquelon Daylight Time
+Saint Pierre and Miquelon Standard Time
+Pohnpei Standard Time
+Pacific Standard Time
+Palau Time
+Paraguay Summer Time
+Paraguay Time
+Réunion Time
+Rothera Research Station Time
+Sakhalin Island Time
+Samara Time
+South African Standard Time
+Solomon Islands Time
+Seychelles Time
+Samoa Daylight Time
+Singapore Time
+Sri Lanka Standard Time
+Srednekolymsk Time
+Suriname Time
+Samoa Standard Time
+Singapore Standard Time
+Showa Station Time
+Tahiti Time
+Thailand Standard Time
+French Southern and Antarctic Time
+Tajikistan Time
+Tokelau Time
+Timor Leste Time
+Turkmenistan Time
+Turkey Time
+Tonga Time
+Tuvalu Time
+Ulaanbaatar Summer Time
+Ulaanbaatar Standard Time
+Coordinated Universal Time
+Uruguay Summer Time
+Uruguay Standard Time
+Uzbekistan Time
+Venezuelan Standard Time
+Vladivostok Time
+Volgograd Time
+Vostok Station Time
+Vanuatu Time
+Wake Island Time
+West Africa Summer Time
+West Africa Time
+Western European Summer Time
+Western European Time
+Western Indonesian Time
+Eastern Indonesian Time
+Central Indonesia Time
+West Greenland Summer Time
+West Greenland Time
+Western Standard Time
+Yakutsk Time
+Yekaterinburg Time
