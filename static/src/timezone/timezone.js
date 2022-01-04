@@ -78,9 +78,6 @@ function calculate() {
                 tzOffsetEl[i].textContent = "UTC" + tzObj.timezones[index[i]].offs;
                 if (tzObj.timezones[index[i]].offs.match(":") != null) {
                     const tmp_split = tzObj.timezones[index[i]].offs.split(":");
-                    console.log("Left hand: " + tmp_split[0]);
-                    console.log("Right hand: " + tmp_split[1]);
-                    console.log(parseFloat(tmp_split[0]) + (parseFloat(tmp_split[1]) / 60));
                     tzOffs[i] = parseFloat(tmp_split[0]) + (parseFloat(tmp_split[1]) / 60);
                 }
                 else {

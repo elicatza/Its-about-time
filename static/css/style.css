@@ -19,6 +19,11 @@ body {
     margin: 10px;
 }
 
+p {
+    display: inline-block;
+    width: 65px;
+}
+
 
 input {
     width: 77px; /* 100px */
@@ -64,6 +69,8 @@ select {
 
 
 p.result {
+    display: block;
+    width: auto;
     font-weight: bold;
     text-align: center;
     font-size: 15pt;

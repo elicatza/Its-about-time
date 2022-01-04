@@ -18,3 +18,5 @@ Fix timezones that don't work during summer time.
 2. Australian Eastern Time
 3. Central Time
 4. Eastern Time (North America)
+5. node app.js is jank
+6. css does not center properly with p width

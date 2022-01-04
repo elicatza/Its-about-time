@@ -111,10 +111,6 @@ function calculate(): void {
 
                 if (tzObj.timezones[index[i]].offs.match(":") != null) {
                     const tmp_split: string[] = tzObj.timezones[index[i]].offs.split(":");
-                    console.log("Left hand: " + tmp_split[0]);
-                    console.log("Right hand: " + tmp_split[1]);
-                    // Offset contains a colon
-                    console.log(parseFloat(tmp_split[0]) + (parseFloat(tmp_split[1]) / 60));
                     tzOffs[i] = parseFloat(tmp_split[0]) + (parseFloat(tmp_split[1]) / 60);
                 } else {
                     tzOffs[i] = tzObj.timezones[index[i]].offs;
